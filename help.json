@@ -13,6 +13,16 @@
     }
   },
   "alert": {
-
+    "description": "Command to do alerts",
+    "options": {
+      "alert symbol": {
+        "description": "The stock symbol we want to look up. [Case-sensitive]",
+        "required": true
+      },
+      "days": {
+        "description": "How many days we want to look up.",
+        "required": false
+      }
+    }
   }
 }
