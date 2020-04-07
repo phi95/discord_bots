@@ -1,28 +1,32 @@
 {
-  "dp": {
-    "description": "Command to look at daily stock prices",
-    "options": {
-      "symbol": {
-        "description": "The stock symbol we want to look up. [Case-sensitive]",
-        "required": true
-      },
-      "days": {
-        "description": "How many days we want to look up.",
-        "required": false
+  "commands": [
+    {
+      "command": "dp",
+      "description": "Command to look at daily stock prices",
+      "options": {
+        "symbol": {
+          "description": "The stock symbol we want to look up. [Case-sensitive]",
+          "required": true
+        },
+        "days": {
+          "description": "How many days we want to look up.",
+          "required": false
+        }
+      }
+    },
+    {
+      "command": "alert",
+      "description": "Command to do alerts",
+      "options": {
+        "alert symbol": {
+          "description": "The stock symbol we want to look up. [Case-sensitive]",
+          "required": true
+        },
+        "days": {
+          "description": "How many days we want to look up.",
+          "required": false
+        }
       }
     }
-  },
-  "alert": {
-    "description": "Command to do alerts",
-    "options": {
-      "alert symbol": {
-        "description": "The stock symbol we want to look up. [Case-sensitive]",
-        "required": true
-      },
-      "days": {
-        "description": "How many days we want to look up.",
-        "required": false
-      }
-    }
-  }
+  ]
 }
